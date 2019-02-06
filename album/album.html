@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./demo2.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <ul>
+                <li class="pic">
+                    <div class="inner">
+                        <div class="bg"></div>
+                        <div class="title">image_i</div>
+                        <div class="header">
+                            <div class="name">pic_i</div>
+                            <div class="close">X</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic">
+                    <div class="inner">
+                        <div class="bg"></div>
+                        <div class="title">image_ii</div>
+                        <div class="header">
+                            <div class="name">pic_ii</div>
+                            <div class="close">X</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic">
+                    <div class="inner">
+                        <div class="bg"></div>
+                        <div class="title">image_iii</div>
+                        <div class="header">
+                            <div class="name">pic_iii</div>
+                            <div class="close">X</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic">
+                    <div class="inner">
+                        <div class="bg"></div>
+                        <div class="title">image_iv</div>
+                        <div class="header">
+                            <div class="name">pic_iv</div>
+                            <div class="close">X</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic">
+                    <div class="inner">
+                        <div class="bg"></div>
+                        <div class="title">image_v</div>
+                        <div class="header">
+                            <div class="name">pic_v</div>
+                            <div class="close">X</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="pic">
+                    <div class="inner">
+                        <div class="bg"></div>
+                        <div class="title">image_vi</div>
+                        <div class="header">
+                            <div class="name">pic_vi</div>
+                            <div class="close">X</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./jquery-1.11.3.js"></script>
+    <script>
+        $(".pic").click(function(){
+            $(".wrapper").addClass("activeWrapper");
+            $(this).addClass("active");
+        })
+        $(".close").click(function(e){
+            e.stopPropagation();
+            $(".activeWrapper").removeClass("activeWrapper");
+            $(".active").removeClass("active");
+        })
+    </script>
+</body>
+
+</html>
